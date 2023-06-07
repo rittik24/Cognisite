@@ -4,18 +4,18 @@ import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import Login from './components/login/Login';
 import Signup from './components/signup/Signup';
-import {Todo} from './components/todo/Todo';
+import { Todo } from './components/todo/Todo';
 
 function App() {
   return (
     <div className="App">
-    <Navbar />
+      <Navbar />
 
-    <Routes>
-      <Route path='/' element={<Login/>}/>
-      <Route path='/signup' element={<Signup/>}/>
-      <Route path='/todo' element={<Todo/>}/>
-     </Routes>
+      <Routes>
+        <Route path='/' element={<Signup />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/todo' element={<Todo />} />
+      </Routes>
     </div>
   );
 }

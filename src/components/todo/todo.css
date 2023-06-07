@@ -42,10 +42,10 @@ button{
     width: 15%;
     padding: 14px 12px;
     margin: 7px 0;
-    border: none;
+    border: solid 1px black;
     font-weight: bold;
-    background-color: brown;
-    color: yellow;
+    background-color:darkgoldenrod;
+    color: black;
     cursor: pointer;
     border-radius: 15px;
 }

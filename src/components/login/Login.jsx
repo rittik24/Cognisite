@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import "./login.css"
-// import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 const Login = () => {
     const [num, setNum] = useState("")
     const [pass, setPass] = useState("")
     const [logindata, setLogindata] = useState([])
-
+const navigate = useNavigate()
     const loginData = (e) => {
         e.preventDefault()
         logdata()
@@ -25,7 +25,7 @@ const Login = () => {
         console.log(userlogdata);
         if (userlogdata.length === 1) {
             alert("login succesfull");
-            //   navigate("/todo")
+              navigate("/todo")
         } else {
             alert("login failed")
         }
@@ -33,10 +33,10 @@ const Login = () => {
     return (
         <div>
             <form action="" onSubmit={loginData}>
-                <lebel >Ph:Number : 
-                <input type="number" placeholder='enter number' value={num} onChange={(e) => setNum(e.target.value)} /> </lebel><br />
-                <lebel>Password : 
-                <input type="password" placeholder='enter password' value={pass} onChange={(e) => setPass(e.target.value)} /> </lebel> <br />
+                <lebel style={{color:"yellow"}} >Ph . Number : </lebel>
+                <input type="number" placeholder='enter number' value={num} onChange={(e) => setNum(e.target.value)} /> <br />
+                <lebel style={{color:"yellow"}}>Password : </lebel>
+                <input type="password" placeholder='enter password' value={pass} onChange={(e) => setPass(e.target.value)} /> <br />
                 <button type='submit'>Login</button>
             </form>
         </div>

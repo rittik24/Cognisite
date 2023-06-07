@@ -1,5 +1,5 @@
 form{
-    width: 50%;
+    width: 80%;
     height:fit-content;
     border: 1px solid red;
     text-align: center;
@@ -11,7 +11,7 @@ form{
 }
 button{
     background-color:chocolate;
-    border: none;
+    border: solid 1px black;
     border-radius: 10%;
     padding: 5px;
     margin-top: 20px;

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-// import "./todo.css"
+import "./todo.css"
 
 // Get form LS
 
