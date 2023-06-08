@@ -8,6 +8,7 @@ form{
     gap: 50px;
     background-color: brown;
     padding: 20px;
+    border-radius: 20px;
 }
 button{
     background-color:chocolate;
@@ -18,4 +19,5 @@ button{
 }
 input{
     background-color:bisque;
+    border-radius: 15px;
 }
