@@ -1,10 +1,13 @@
 import React from 'react'
 import {  useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+
 const Signup = () => {
     const [name, setName] = useState("");
     const [pass, setPass] = useState("");
     const [number, setNumber] = useState("");
     const [data, setData] = useState([])
+    const navigate = useNavigate()
 
     const signForm = (e) => {
         e.preventDefault()
@@ -12,6 +15,7 @@ const Signup = () => {
         setName("")
         setPass("")
         setNumber("")
+        navigate("/login")
       }
 
       const fetchData = async () => {

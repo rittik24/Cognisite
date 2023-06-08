@@ -5,7 +5,7 @@ const Login = () => {
     const [num, setNum] = useState("")
     const [pass, setPass] = useState("")
     const [logindata, setLogindata] = useState([])
-const navigate = useNavigate()
+    const navigate = useNavigate()
     const loginData = (e) => {
         e.preventDefault()
         logdata()
@@ -25,7 +25,7 @@ const navigate = useNavigate()
         console.log(userlogdata);
         if (userlogdata.length === 1) {
             alert("login succesfull");
-              navigate("/todo")
+            navigate("/todo")
         } else {
             alert("login failed")
         }
@@ -33,9 +33,9 @@ const navigate = useNavigate()
     return (
         <div>
             <form action="" onSubmit={loginData}>
-                <lebel style={{color:"yellow"}} >Ph . Number : </lebel>
+                <lebel style={{ color: "yellow" }} >Ph . Number : </lebel>
                 <input type="number" placeholder='enter number' value={num} onChange={(e) => setNum(e.target.value)} /> <br />
-                <lebel style={{color:"yellow"}}>Password : </lebel>
+                <lebel style={{ color: "yellow" }}>Password : </lebel>
                 <input type="password" placeholder='enter password' value={pass} onChange={(e) => setPass(e.target.value)} /> <br />
                 <button type='submit'>Login</button>
             </form>
